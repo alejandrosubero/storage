@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8DF5A01"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".CloudActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/upCloud"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:translationZ="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@android:color/darker_gray"
+            app:cardCornerRadius="8dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="408dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/upCloudImage"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/ic_baseline_cloud_upload_24" />
+                <TextView
+                    android:id="@+id/upCloudName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Cloud"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/donwloadCloud"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:translationZ="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@android:color/darker_gray"
+            app:cardCornerRadius="8dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="408dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/donwloadCloudImage"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/ic_baseline_cloud_download_24" />
+                <TextView
+                    android:id="@+id/donwloadCloudName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cloud Donwload"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</LinearLayout>

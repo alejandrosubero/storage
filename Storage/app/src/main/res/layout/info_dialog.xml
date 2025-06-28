@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/darker_gray"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:background="#686767">
+            <TextView
+                android:id="@+id/textViewAddTiTle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select for add"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/infoMessage"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:text="Select the element do you want to create"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="18dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/info_btn"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="close"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:stateListAnimator="@null"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:elevation="10dp"
+                android:translationZ="10dp"
+                android:clickable="true"
+                android:backgroundTint="#7F8383"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"/>
+
+
+
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</LinearLayout>

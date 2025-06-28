@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/darker_gray"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:background="#686767">
+            <TextView
+                android:id="@+id/textViewActionTiTle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select The Unit"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spinnerx"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="8dp" />
+
+            <Button
+                android:id="@+id/btnSelectUnitAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="select"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:stateListAnimator="@null"
+                android:elevation="10dp"
+                android:translationZ="10dp"
+                android:clickable="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:backgroundTint="#737776"
+                />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/darker_gray"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/backup_icon"
+            android:id="@+id/imageViewbk"/>
+        <TextView
+            android:id="@+id/textViewBackupTiTle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Database Backup"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+
+
+
+        <TextView
+            android:id="@+id/textViewMessageBackup"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:text="Enter the name for the backup file."
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/dataBaseName"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:elevation="10dp"
+            android:hint="Data Base Name..."
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancelbk"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:stateListAnimator="@null"
+                android:textColor="@color/black"
+                android:elevation="10dp"
+                android:translationZ="10dp"
+                android:clickable="true"
+                android:backgroundTint="#FF5722"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"/>
+
+            <Button
+                android:id="@+id/btn_okaybk"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Ok"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:stateListAnimator="@null"
+                android:textColor="@color/black"
+                android:elevation="10dp"
+                android:translationZ="10dp"
+                android:clickable="true"
+                android:backgroundTint="@color/design_default_color_secondary"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                />
+
+
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</LinearLayout>

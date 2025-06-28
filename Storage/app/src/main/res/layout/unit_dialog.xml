@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/darker_gray"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="170dp"
+            android:src="@drawable/istockphoto"
+            android:id="@+id/unitImageView"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/textViewUnitTiTle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Storage Unit"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+
+
+        <TextView
+            android:id="@+id/textViewMessageUnit"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:text="Enter the name of Storage Unit."
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/storageUnitName"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:elevation="10dp"
+            android:hint="Storage Unit Name..."
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancel_btn_unit"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:stateListAnimator="@null"
+                android:textColor="@color/black"
+                android:elevation="10dp"
+                android:translationZ="10dp"
+                android:clickable="true"
+                android:backgroundTint="#FF5722"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"/>
+
+            <Button
+                android:id="@+id/add_btn_unit"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:stateListAnimator="@null"
+                android:textColor="@color/black"
+                android:elevation="10dp"
+                android:translationZ="10dp"
+                android:clickable="true"
+                android:backgroundTint="@color/design_default_color_secondary"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                />
+
+
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</LinearLayout>

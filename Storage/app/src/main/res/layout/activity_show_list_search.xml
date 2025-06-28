@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#F8DF5A01"
+    tools:context=".ShowListSearchActivity">
+
+    <SearchView
+        android:id="@+id/txtSearch"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        app:iconifiedByDefault="true" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ShowStoreList"
+        android:id="@+id/storgeRecyclerViewSearch">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
+
+

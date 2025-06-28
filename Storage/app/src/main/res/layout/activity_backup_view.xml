@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8DF5A01"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".BackupViewActivity"
+    >
+
+    <Button
+        android:id="@+id/bottonCreate"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_margin="8dp"
+        android:text="Create Backup"
+        android:textStyle="bold"
+        android:backgroundTint="#655F5D"
+        />
+
+    <Button
+        android:id="@+id/bottonImport"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="Import Backup"
+        android:textStyle="bold"
+        android:layout_margin="8dp"
+        android:backgroundTint="#655F5D"
+        />
+
+    <Button
+        android:id="@+id/bottonNumberRowDB"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="Number of records in DB"
+        android:textStyle="bold"
+        android:layout_margin="8dp"
+        android:backgroundTint="#655F5D"
+        />
+
+    <Button
+        android:id="@+id/bottonCloud"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_margin="8dp"
+        android:text="Cloud Operations"
+        android:textStyle="bold"
+        android:backgroundTint="#655F5D"
+        />
+
+</LinearLayout>
