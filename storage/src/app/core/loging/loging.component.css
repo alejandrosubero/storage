@@ -1,0 +1,46 @@
+
+
+.com{
+    justify-content: center;
+    width: 100%;
+}
+
+.login{
+    /* background: red; */
+    width: 50%;
+    height: 80%;
+    border-radius: 5;
+}
+
+.caja{
+    display: block;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.form{
+    width: 100%; 
+    padding: 5px;
+    margin-top: 5px;
+    
+}
+
+
+.cuerpo {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+  
+ 
+  .centro {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

@@ -1,0 +1,69 @@
+<div class="cuerpo">
+    <div class="centro">
+      <div class="login ">
+        <div class="h4 text-center font-weight-light p-1" style="color: aliceblue; font-weight: bold;">Login User</div>
+        <div class="m-2">
+          <div class="caja">
+  
+            <form [formGroup]="profileForm" class="col-12">
+  
+              <!-- <label for="username" class="m-1">User Name:</label> -->
+              <div class="input-group mb-3">
+                <input type="password" class="form-control" formControlName="username" id="username" placeholder="Email"
+                  aria-label="username" aria-describedby="basic-addon2" required (keyup)="onKey()">
+                <span class="input-group-text" id="basic-addon2" (click)="viewUserName()">
+                  <mat-icon>{{iconUser}}</mat-icon>
+                </span>
+              </div>
+  
+  
+              <!-- <label for="username" class="m-1">Password:</label> -->
+              <div class="input-group mb-3">
+                <input type="password" class="form-control" formControlName="password" id="password" placeholder="password"
+                  aria-label="password" aria-describedby="basic-addon2" required (keyup.enter)="onLogin()" (keyup)="onKey()">
+                <span class="input-group-text" id="basic-addon2" (click)="viewPassword()">
+                    <mat-icon>{{icon}}</mat-icon>
+                </span>
+              </div>
+  
+              <!-- <div class="form-group col-12 m-1" bis_skin_checked="1">
+                      <label for="username">User Name: </label>
+                      <input type="text" formControlName="username" id="username" placeholder="User name" class="form rounded" required>
+                    </div> -->
+  
+              <!-- <div class="form-group col-12  m-2" bis_skin_checked="1">
+                <label for="username">Password: </label>
+                <input type="password" formControlName="password" id="password" placeholder="password"
+                  class="form rounded" required>
+              </div> -->
+            </form>
+  
+  
+          </div>
+          <div class="d-flex justify-content-center mt-2">
+            <button class="btn btn-primary m-1 " (click)="onLogin()">Login in</button>
+          </div>
+          <!-- <div class="d-flex justify-content-center mt-2">
+            <button class="btn btn-primary m-1 " (click)="saveUserTest()">user test</button>
+          </div>
+          <div class="d-flex justify-content-center mt-2">
+            <button class="btn btn-primary m-1 " (click)="getUserTest()">get user test</button>
+          </div> -->
+  
+          <div class="m-4"  *ngIf="isNotification" style="text-align: center;">
+            <samp style="color: red; font-weight: bolder; font-size: larger;">{{notification}}</samp>
+            <div>
+              <samp style="color: rgb(11, 180, 5); font-weight: bolder; font-size: larger; cursor: pointer;" (click)="recovery()">{{recoveryUser}}</samp>
+            </div>
+               
+          </div>
+     
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+ 
+ 

@@ -1,0 +1,216 @@
+<!-- <div class="mt-3">
+  <mat-tab-group>
+
+    <mat-tab label="Tools">
+      <div>
+        <div>
+          <h1> Tools </h1>
+        </div>
+        <br>
+        <app-tools-list></app-tools-list>
+      </div>
+
+    </mat-tab>
+
+    <mat-tab label="Materials">
+      <div>
+        <div class="container mt-3">
+          <div class="row">
+            <div class="col">
+              <div class="h2">Materials:</div>
+            </div>
+            <div class="col">
+              <div class="d-flex justify-content-end">
+                <div class="row ">
+                  <div class="col">
+                    <button mat-fab color="primary" (click)="changeView()">
+                      <mat-icon style="cursor: pointer;">table_chart</mat-icon>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class=" gallery" *ngIf="!this.tableView">
+          <div class="d-flex justify-content-center" *ngFor="let item of this.materiales">
+            <app-materials-car-list [item]="item"></app-materials-car-list>
+          </div>
+        </div>
+
+        <div class=" gallery" *ngIf="this.tableView">
+          <app-materials-list></app-materials-list>
+        </div>
+      </div>
+
+
+    </mat-tab>
+
+  </mat-tab-group>
+
+</div> -->
+
+<div class="m-4">
+  <div class="container mt-3 ">
+    <div class="row">
+      <div class="col">
+        <div class="h2">Filters:</div>
+      </div>
+      <div class="col">
+        <div class="d-flex justify-content-end">
+          <div class="row ">
+            <div class="col">
+              <button mat-fab color="primary" (click)="toolsActionView()" style="font-size: 10;">
+                Tools
+              </button>
+            </div>
+            <div class="col">
+              <button mat-fab color="primary" (click)="materialsActionView()" style="font-size: 10;">
+                Material
+              </button>
+          </div>
+
+          <div class="col">
+            <button mat-fab color="primary" (click)="clearActionView()" style="font-size: 10;">
+              clear
+            </button>
+        </div>
+
+        <div class="col">
+          <button mat-fab color="primary" (click)=" onCreate()" style="font-size: 10;">
+            New
+          </button>
+      </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mt-3 ">
+<br>
+
+<div *ngIf="this.toolsView">
+  <div class="container mt-3 " >
+    <div class="row">
+      <div class="col">
+        <div class="h2">Tools:</div>
+      </div>
+      <div class="col">
+        <div class="d-flex justify-content-end">
+          <div class="row ">
+            <div class="col">
+              <button mat-fab color="primary" (click)="changeViewTool()">
+                <mat-icon style="cursor: pointer;">table_chart</mat-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class=" gallery" *ngIf="!this.tableToolView">
+    <div class="d-flex justify-content-center" *ngFor="let item of this.toolsList">
+      <app-materials-car-list [item]="item" (click)="onEditItem(item)"></app-materials-car-list>
+    </div>
+  </div>
+
+  <div class="gallery"  *ngIf="this.tableToolView">
+    <div>
+      <app-tools-list></app-tools-list>
+    </div>
+    <br>
+    <br>
+  </div>
+  <br>
+
+</div>
+
+
+  <div *ngIf="this.materialsView">
+    <div class="container mt-3 " >
+      <div class="row">
+        <div class="col">
+          <div class="h2">Materials:</div>
+        </div>
+        <div class="col">
+          <div class="d-flex justify-content-end">
+            <div class="row ">
+              <div class="col">
+                <button mat-fab color="primary" (click)="changeView()">
+                  <mat-icon style="cursor: pointer;">table_chart</mat-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery"  *ngIf="!this.tableView">
+      <div class="d-flex justify-content-center" *ngFor="let item of this.materiales">
+        <app-materials-car-list [item]="item" (click)="onEditItem(item)"></app-materials-car-list>
+      </div>
+    </div>
+
+    <div class=" gallery"  *ngIf="this.tableView">
+      <div>
+        <app-materials-list></app-materials-list>
+      </div>
+      <br>
+      <br>
+    </div>
+  </div>
+
+
+
+  <!-- <div class=" gallery"  *ngIf="this.homeView">
+    <div>
+    <app-itens-list></app-itens-list>
+    </div>
+  </div> -->
+
+
+
+
+  <div *ngIf="this.homeView">
+    <div class="container mt-3 " >
+      <div class="row">
+    
+        <div class="col">
+          <div class="d-flex justify-content-end">
+            <div class="row ">
+              <div class="col">
+                <button mat-fab color="primary" (click)="changeViewHome()">
+                  <mat-icon style="cursor: pointer;">table_chart</mat-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery"  *ngIf="!this.homeTabletView">
+      <div class="d-flex justify-content-center" *ngFor="let item of this.allItems">
+        <app-materials-car-list [item]="item" (click)="onEditItem(item)"></app-materials-car-list>
+      </div>
+    </div>
+
+    <div class=" gallery"  *ngIf="this.homeTabletView">
+      <div>
+        <app-itens-list></app-itens-list>
+      </div>
+      <br>
+      <br>
+    </div>
+  </div>
+
+<br>
+</div>
+
+
+

@@ -1,0 +1,54 @@
+
+
+
+table {
+    width: 100%;
+  }
+  
+  .fon{
+    background-color: aliceblue;
+  }
+
+
+
+  .mat-column-id {
+    Word-wrap: break-Word !important;
+    white-space: unset !important;
+    flex: 0 0 15% !important;
+    width: 10% !important;
+    margin: 0 0 0 10px;
+    overflow-wrap: break-Word;
+    Word-wrap: break-Word;
+    Word-break: break-Word;
+        
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+  
+
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  td, th {
+    width: 25%;
+  }
+
+  .ex-button-row button,
+.ex-button-row a {
+  margin-right: 8px;
+}
+
+.cleanFlow{
+    overflow: hidden;
+}
+
+.flowRight{
+  float: right;
+}
+
+
+

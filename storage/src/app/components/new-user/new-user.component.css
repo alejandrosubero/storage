@@ -1,0 +1,72 @@
+
+.com{
+    justify-content: center;
+    width: 100%;
+}
+
+.login{
+    /* background: red; */
+    width: 50%;
+    height: 80%;
+    border-radius: 5;
+}
+
+.caja{
+    display: block;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.form{
+    width: 100%; 
+    padding: 5px;
+    margin-top: 5px;
+    
+}
+
+.textColor{
+  color: rgb(0, 0, 0); 
+}
+
+.textTitle{
+  color: rgb(0, 0, 0); 
+  font-weight: bold;
+}
+
+
+.cuerpo {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+  
+ 
+  .centro {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  mat-form-field {
+    margin-right: 12px;
+    background-color:green;
+    color: aliceblue;
+  }
+
+
+  .profileImagen {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }

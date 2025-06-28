@@ -1,0 +1,32 @@
+
+<nav class="navbar navbar-expand-sm navbar-dark barbackground">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/Logo_tally_handy_man-1.png" alt="" width="200">
+        </a>
+        <button 
+            class="navbar-toggler" 
+            type="button" 
+            (click)="iscollapse = !iscollapse" [attr.aria-expanded]="!iscollapse"
+            aria-controls="navbarSupportedContet" 
+            data-targe="#navbarSupportedContet"
+            data-toggle="collapse"
+            aria-label="Toogle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse p-2" id="bs-example-navbar-collapse-1" [ngbCollapse]="iscollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item  nav-bt"><a class="nav-link text-white" [routerLink]="[ '/items/menu/list/detail' ]" >Home</a></li>
+                <li class="nav-item  nav-bt"><a class="nav-link text-white" [routerLink]="[ '/items/menu/users' ]">Users</a></li>
+                <li class="nav-item  nav-bt"><a class="nav-link text-white" [routerLink]="[ '/login' ]">Sign out</a></li>
+                <!-- <li class="nav-item  nav-bt"><a class="nav-link text-white" href="#">Register</a></li> -->
+                <!-- <li class="nav-item  nav-bt"><a class="nav-link text-white" [routerLink]="[ '/contact' ]">contact</a></li>  -->
+                <!-- <li class="nav-item  nav-bt"><a class="nav-link text-white" href="#" (click)="dowload()">Dowload</a></li> -->
+                <!-- <li class="nav-item  nav-bt"><a class="nav-link text-white" [routerLink]="[ '/contact' ]">co</a></li>  -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+ 
